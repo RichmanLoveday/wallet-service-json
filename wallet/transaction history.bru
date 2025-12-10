@@ -1,0 +1,20 @@
+meta {
+  name: transaction history
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://hng13-stage-two-mbs8j.sevalla.app/api/wallat/transactions
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vaG5nMTMtc3RhZ2UtdHdvLW1iczhqLnNldmFsbGEuYXBwL2FwaS9hdXRoL2dvb2dsZS9jYWxsYmFjayIsImlhdCI6MTc2NTM4MTExNSwiZXhwIjoxNzY1Mzg0NzE1LCJuYmYiOjE3NjUzODExMTUsImp0aSI6IkljR0xYWUZrSjdMTThaZE0iLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.s6NlkiGMwOXVUCqNQ1yhgGHWOEAv-VYivFdUBehDcHg
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

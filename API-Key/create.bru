@@ -1,0 +1,31 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://hng13-stage-two-mbs8j.sevalla.app/api/keys/create
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvZ29vZ2xlL2NhbGxiYWNrIiwiaWF0IjoxNzY1MzcxMTA5LCJleHAiOjE3NjUzNzQ3MDksIm5iZiI6MTc2NTM3MTEwOSwianRpIjoiZmlPbzdxdFlWcGJaVlZKYSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vk40WUwllfPmdX_539FwWaT4WtwPnKOUiQ4OzJnf35E
+}
+
+body:json {
+  {
+    "name": "another-service",
+    "permissions": [
+      "read",
+      "deposit"
+    ],
+    "expiry": "1Y"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

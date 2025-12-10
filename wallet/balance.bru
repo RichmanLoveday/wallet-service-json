@@ -1,0 +1,20 @@
+meta {
+  name: balance
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://hng13-stage-two-mbs8j.sevalla.app/api/wallet/balance
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vaG5nMTMtc3RhZ2UtdHdvLW1iczhqLnNldmFsbGEuYXBwL2FwaS9hdXRoL2dvb2dsZS9jYWxsYmFjayIsImlhdCI6MTc2NTM4MTM2NSwiZXhwIjoxNzY1Mzg0OTY1LCJuYmYiOjE3NjUzODEzNjUsImp0aSI6IjBYNjVBMWZkN2prQ2hPVEMiLCJzdWIiOiIzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.1JGi_W8niz_NDROyoArPddBQKo3WFCLJHH7_Two4U4w
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
