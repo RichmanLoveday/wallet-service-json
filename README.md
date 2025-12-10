@@ -1,3 +1,1 @@
-<!-- Fetch in Bruno Button -->
-<div class="bruno-fetch-button" data-bruno-collection-url="https://github.com/RichmanLoveday/wallet-service-json.git"></div>
-<script src="https://fetch.usebruno.com/button.js"></script>
+[<img src="https://fetch.usebruno.com/button.svg" alt="Fetch in Bruno" style="width: 130px; height: 30px;" width="128" height="32">](https://fetch.usebruno.com?url=https%3A%2F%2Fgithub.com%2FRichmanLoveday%2Fwallet-service-json.git "target=_blank rel=noopener noreferrer")
