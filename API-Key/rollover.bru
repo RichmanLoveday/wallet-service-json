@@ -1,11 +1,11 @@
 meta {
-  name: create
+  name: rollover
   type: http
-  seq: 1
+  seq: 2
 }
 
 post {
-  url: {{live_url}}/keys/create
+  url: {{live_url}}/keys/rollover
   body: json
   auth: bearer
 }
@@ -16,12 +16,7 @@ auth:bearer {
 
 body:json {
   {
-    "name": "test-service-2",
-    "permissions": [
-      "read",
-      "deposit"
-  //     "transfer"
-    ],
+    "expired_key_id": "1",
     "expiry": "1H"
   }
 }

@@ -1,23 +1,22 @@
 meta {
   name: revoke
   type: http
-  seq: 2
+  seq: 3
 }
 
-post {
-  url: https://hng13-stage-two-mbs8j.sevalla.app/api/keys/rollover
+put {
+  url: {{live_url}}/keys/revoke
   body: json
   auth: bearer
 }
 
 auth:bearer {
-  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvZ29vZ2xlL2NhbGxiYWNrIiwiaWF0IjoxNzY1MzcxMTA5LCJleHAiOjE3NjUzNzQ3MDksIm5iZiI6MTc2NTM3MTEwOSwianRpIjoiZmlPbzdxdFlWcGJaVlZKYSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vk40WUwllfPmdX_539FwWaT4WtwPnKOUiQ4OzJnf35E
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvZ29vZ2xlL2NhbGxiYWNrIiwiaWF0IjoxNzY1NDUwNzY3LCJleHAiOjE3NjU0NTQzNjcsIm5iZiI6MTc2NTQ1MDc2NywianRpIjoid1hHYU9ldkhrOHhudXZxTyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4_M14KOfWjFh_Gb0-2RvP1RYsv7nvkr8aRx5vAiNnhw
 }
 
 body:json {
   {
-    "expired_key_id": "2",
-    "expiry": "1H"
+    "key_id": 2
   }
 }
 
